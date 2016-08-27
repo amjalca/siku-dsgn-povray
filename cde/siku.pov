@@ -7,7 +7,7 @@ global_settings { assumed_gamma 1.0 }
 
 /*-- camera --*/
 camera{
-    location <8, 4, 8>         
+    location <80, 40, 80>         
     right     x*image_width/image_height
     look_at <0, 0.4, 0>   
     angle 30
@@ -35,8 +35,26 @@ texture {
 plane {
   y, 0
   texture { TxraBase }
-}  
+} 
+
+#declare Text_Obj=
+text {
+  ttf
+  "timrom.ttf",
+  " Ann 3.7",
+  12, 0.0
+
+  scale 0.26
+  translate -0.5
+  rotate -90*z
+  translate 0.5
+  translate 0.8*y
+}
+
+
 
 /*-- tube --*/
+                
+                
 
 
