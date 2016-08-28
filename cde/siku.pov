@@ -41,7 +41,7 @@ plane {
 text {
   ttf
   "timrom.ttf",
-  " Ann 3.7",
+  " Siku",
   12, 0.0
 
   scale 0.26
@@ -49,20 +49,44 @@ text {
   rotate -90*z
   translate 0.5
   translate 0.8*y
-} 
+}
+
+/*-- Column --*/
+#declare Tex_Column=
+texture {
+  object {
+    Text_Obj
+    texture { TxraBase },
+    //texture { Tex_Metal_A }
+  }
+
+  warp { cylindrical }
+}
+ 
+
+/*-- Torus --*/ 
 
 #declare Obj=
 union {
-  //cylinder { 0, 2.1*y, 0.2 texture { Tex_Column } }
+  cylinder { 0, 2.1*y, 0.2 texture { Tex_Column } }
   torus { 0.2, 0.04 translate 0.04*y }
   torus { 0.2, 0.04 translate 2.06*y }
   texture { TxraBase }
 }
 
-object { Obj }
+object { Obj }  
+
+
+#macro Obj4(Angle)
+  Obj
+  rotate Angle*y
+  scale 0.8
+  translate 1.2*x
+#end
 
 /*-- tube --*/
                 
+object { Obj4(260) rotate  20*y translate <0.6,0,-0.5> }
                 
 
 
