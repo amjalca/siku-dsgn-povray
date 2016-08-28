@@ -51,13 +51,42 @@ text {
   translate 0.8*y
 }
 
+#declare Tex_Metal_A=
+texture {
+  pigment {
+    gradient y
+    color_map {
+      [0.35 color rgb <0.65,0.2,0.1> ]
+      [0.35 color rgb <0.15,0.2,0.4> ]
+    }
+    scale 2
+  }
+  finish {
+    ambient 0.0
+    diffuse 0.2
+    specular 0.4
+    roughness 0.1
+    metallic
+
+    reflection {
+      0.8
+      metallic
+    }
+  }
+  normal {
+    granite 0.05
+    warp {turbulence 1}
+    scale 0.1
+  }
+}
+
 /*-- Column --*/
 #declare Tex_Column=
 texture {
   object {
     Text_Obj
     texture { TxraBase },
-    //texture { Tex_Metal_A }
+    texture { Tex_Metal_A }
   }
 
   warp { cylindrical }
