@@ -115,7 +115,11 @@ object { Obj }
 
 /*-- tube --*/
                 
-object { Obj4(260) rotate  20*y translate <0.6,0,-0.5> }
-                
+object { Obj4(260) rotate  20*y translate <0.6,0,-0.5> }      
+object { Obj4(260) rotate  20*y translate <0.10,0,-0.5> }  
+object { Obj4(260) rotate  20*y translate <0.35,0,-0.5> }
+object { Obj4(260) rotate  20*y translate <0.80,0,-0.5> } 
+                                                              
+                                                              
 
 
