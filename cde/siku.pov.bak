@@ -10,7 +10,7 @@ camera{
     location <8, 4, 8>         
     right     x*image_width/image_height
     look_at <0, 0.4, 0>   
-    angle 30
+    angle 35
 }
 
 /*-- light --*/
@@ -41,12 +41,12 @@ plane {
 text {
   ttf
   "timrom.ttf",
-  " Siku",
+  " x ",
   12, 0.0
 
   scale 0.26
   translate -0.5
-  rotate -90*z
+  rotate 90*z
   translate 0.5
   translate 0.8*y
 }
@@ -110,15 +110,19 @@ object { Obj }
   Obj
   rotate Angle*y
   scale 0.8
-  translate 1.2*x
+  //translate 1.2*x
 #end
 
 /*-- tube --*/
                 
-object { Obj4(260) rotate  20*y translate <0.6,0,-0.5> }      
-object { Obj4(260) rotate  20*y translate <0.10,0,-0.5> }  
-object { Obj4(260) rotate  20*y translate <0.35,0,-0.5> }
-object { Obj4(260) rotate  20*y translate <0.80,0,-0.5> } 
+object { Obj4(260) rotate  20*y translate <0.5,0,0.4> }      
+object { Obj4(260) rotate  20*y translate <0.7,0,0.2> }  
+object { Obj4(260) rotate  20*y translate <0.9,0,0.0> }
+object { Obj4(260) rotate  20*y translate <1.1,0,-0.2> }
+object { Obj4(260) rotate  20*y translate <1.3,0,-0.4> } 
+object { Obj4(260) rotate  20*y translate <1.5,0,-0.6> }
+object { Obj4(260) rotate  20*y translate <1.7,0,-0.8> }  
+
                                                               
                                                               
 
