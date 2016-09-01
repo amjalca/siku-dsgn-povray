@@ -121,8 +121,17 @@ object { Obj4(260) rotate  20*y translate <0.9,0,0.0> }
 object { Obj4(260) rotate  20*y translate <1.1,0,-0.2> }
 object { Obj4(260) rotate  20*y translate <1.3,0,-0.4> } 
 object { Obj4(260) rotate  20*y translate <1.5,0,-0.6> }
-object { Obj4(260) rotate  20*y translate <1.7,0,-0.8> }  
+object { Obj4(260) rotate  20*y translate <1.7,0,-0.8> }         
 
+object { Obj4(260) rotate  20*y translate <1.5,0,0.4> }      
+object { Obj4(260) rotate  20*y translate <1.7,0,0.2> }  
+object { Obj4(260) rotate  20*y translate <1.9,0,0.0> }
+object { Obj4(260) rotate  20*y translate <2.1,0,-0.2> }
+object { Obj4(260) rotate  20*y translate <2.3,0,-0.4> } 
+object { Obj4(260) rotate  20*y translate <2.5,0,-0.6> }
+object { Obj4(260) rotate  20*y translate <2.7,0,-0.8> } 
+                                                                 
+                                                                 
                                                               
                                                               
 
