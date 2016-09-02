@@ -10,7 +10,8 @@ camera{
     location <8, 4, 8>         
     right     x*image_width/image_height
     look_at <0, 0.4, 0>   
-    angle 35
+    angle 35   
+    rotate <0, -360*(clock+0.10), 0>
 }
 
 /*-- light --*/

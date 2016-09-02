@@ -103,7 +103,7 @@ union {
   texture { TxraBase }
 }
 
-object { Obj }  
+//object { Obj }  
 
 
 #macro Obj4(Angle)
