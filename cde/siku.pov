@@ -6,9 +6,19 @@ global_settings { assumed_gamma 1.0 }
 /*-- library --*/
 #include "colors.inc" 
 
+#declare Jump_Start  = 0.5;
+#declare Jump_Height = 7;
+#if (clock < Jump_Start )
+ #declare Camera_Y = 1.00;
+#else
+ #declare Camera_Y = 1.00
+   + Jump_Height*
+     0.5*(1-cos(4*pi*(clock-Jump_Start)));
+#end
+
 /*-- camera --*/
 camera{
-    location <8, 4, 8>         
+    location <8, Camera_Y, 8>         
     right     x*image_width/image_height
     look_at <0, 0.4, 0>   
     angle 35   

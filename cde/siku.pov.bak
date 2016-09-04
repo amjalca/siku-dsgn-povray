@@ -1,6 +1,7 @@
 //Version 3.7    
 
-global_settings { assumed_gamma 1.0 } 
+global_settings { assumed_gamma 1.0 }  
+#declare Move = 3.00 * clock;
 
 /*-- library --*/
 #include "colors.inc" 
