@@ -34,7 +34,7 @@ light_source {
   color rgb <1.0, 0.9, 0.8>*2.4
 }      
 
-/*-- base --*/ 
+/*-- base plano --*/ 
 #declare TxraBase=
 texture {
   pigment {
@@ -45,7 +45,21 @@ texture {
     diffuse 0.6
     specular 0.15
   }
-}  
+}
+
+ 
+/*-- base siku ika--*/ 
+#declare TxraBaseIka=
+texture {
+  pigment {
+    color rgb <0.60, 0.30, 0.18> 
+  }
+  finish {
+    ambient 0.0
+    diffuse 0.6
+    specular 0.15
+  }
+}
 
 plane {
   y, 0
@@ -100,7 +114,7 @@ texture {
 texture {
   object {
     Text_Obj
-    texture { TxraBase },
+    texture { TxraBaseIka },
     texture { Tex_Metal_A }
   }
 
@@ -115,7 +129,7 @@ union {
   cylinder { 0, 2.1*y, 0.2 texture { Tex_Column } }
   torus { 0.2, 0.04 translate 0.04*y }
   torus { 0.2, 0.04 translate 2.06*y }
-  texture { TxraBase }
+  texture { TxraBaseIka }
 }
 
 //object { Obj }  
