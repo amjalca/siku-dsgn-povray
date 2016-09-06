@@ -125,11 +125,11 @@ texture {
 /*-- Torus --*/ 
 
 #declare Obj=
-union {
-  cylinder { 0, 2.1*y, 0.2 texture { Tex_Column } }
-  torus { 0.2, 0.04 translate 0.04*y }
-  torus { 0.2, 0.04 translate 2.06*y }
-  texture { TxraBaseIka }
+union {  
+      cylinder { 0, 2.1*y, 0.2 texture { Tex_Column } }
+      torus { 0.2, 0.04 translate 0.04*y }
+      //torus { 0.2, 0.04 translate 2.06*y }
+      texture { TxraBaseIka }
 }
 
 //object { Obj }  
@@ -142,23 +142,28 @@ union {
   //translate 1.2*x
 #end
 
-/*-- tube --*/
-                
-object { Obj4(260) rotate  20*y translate <0.5,0,0.4> }      
-object { Obj4(260) rotate  20*y translate <0.7,0,0.2> }  
-object { Obj4(260) rotate  20*y translate <0.9,0,0.0> }
-object { Obj4(260) rotate  20*y translate <1.1,0,-0.2> }
-object { Obj4(260) rotate  20*y translate <1.3,0,-0.4> } 
-object { Obj4(260) rotate  20*y translate <1.5,0,-0.6> }
-object { Obj4(260) rotate  20*y translate <1.7,0,-0.8> }         
+/*-- tube --*/ 
 
-object { Obj4(260) rotate  20*y translate <1.5,0,0.4> }      
-object { Obj4(260) rotate  20*y translate <1.7,0,0.2> }  
-object { Obj4(260) rotate  20*y translate <1.9,0,0.0> }
-object { Obj4(260) rotate  20*y translate <2.1,0,-0.2> }
-object { Obj4(260) rotate  20*y translate <2.3,0,-0.4> } 
-object { Obj4(260) rotate  20*y translate <2.5,0,-0.6> }
-object { Obj4(260) rotate  20*y translate <2.7,0,-0.8> } 
+//#for (Cntr, 0.1, 7, 0.1) 
+  //  object { Obj4(260) rotate  Cntr*y translate <0.5,0,0.4> scale <0,Cntr, 0> }  
+    //cylinder { 0, Cntr*y, 0.2 texture { Tex_Column } }
+//#end 
+                
+object { Obj4(260) rotate  20*y translate <0.5,0,0.4> scale <0,1,0>}      
+object { Obj4(260) rotate  20*y translate <0.7,0,0.2> scale <0,1.1,0>}  
+object { Obj4(260) rotate  20*y translate <0.9,0,0.0> scale <0,1.2,0>}
+object { Obj4(260) rotate  20*y translate <1.1,0,-0.2> scale <0,1.3,0>}
+object { Obj4(260) rotate  20*y translate <1.3,0,-0.4> scale <0,1.4,0>} 
+object { Obj4(260) rotate  20*y translate <1.5,0,-0.6> scale <0,1.5,0>}
+object { Obj4(260) rotate  20*y translate <1.7,0,-0.8> scale <0,1.6,0>}         
+
+object { Obj4(260) rotate  20*y translate <1.5,0,0.4> scale <0,1,0>}      
+object { Obj4(260) rotate  20*y translate <1.7,0,0.2> scale <0,1.1,0>}  
+object { Obj4(260) rotate  20*y translate <1.9,0,0.0> scale <0,1.2,0>}
+object { Obj4(260) rotate  20*y translate <2.1,0,-0.2> scale <0,1.3,0>}
+object { Obj4(260) rotate  20*y translate <2.3,0,-0.4> scale <0,1.4,0>} 
+object { Obj4(260) rotate  20*y translate <2.5,0,-0.6> scale <0,1.5,0>}
+object { Obj4(260) rotate  20*y translate <2.7,0,-0.8> scale <0,1.6,0>} 
                                                                  
                                                                  
                                                               
