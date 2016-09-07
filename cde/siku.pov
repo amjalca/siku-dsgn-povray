@@ -37,7 +37,7 @@ light_source {
   color rgb <1.0, 0.9, 0.8>*2.4
 }      
 
-/*-- base plano --*/ 
+/*-- Plane Base --*/ 
 #declare TxraBase=
 texture {
   pigment {
