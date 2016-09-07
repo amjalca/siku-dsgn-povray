@@ -70,7 +70,7 @@ plane {
 text {
   ttf
   "timrom.ttf",
-  " x ",
+  "",
   12, 0.0
 
   scale 0.26
@@ -114,7 +114,7 @@ texture {
 texture {
   object {
     Text_Obj
-    texture { TxraBaseIka },
+    texture { TxraBaseIka }
     texture { Tex_Metal_A }
   }
 
