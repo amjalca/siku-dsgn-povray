@@ -1,10 +1,13 @@
 //Version 3.7    
 
 #include "colors.inc"
+#include "stars.inc"    
+#include "textures.inc"
+
 global_settings { assumed_gamma 1.0 }  
 #declare Move = 3.00 * clock;   
 
-background { White}
+background { Feldspar }
 
 /*-- library --*/
 #include "colors.inc" 
@@ -50,16 +53,10 @@ texture {
  
 /*-- base siku ika--*/ 
 #declare TxraBaseIka=
-texture {
-  pigment {
-    color rgb <0.60, 0.30, 0.18> 
-  }
-  finish {
-    ambient 0.0
-    diffuse 0.6
-    specular 0.15
-  }
+texture{ pigment{ color rgb< 0.75, 0.5, 0.30>*0.5 }  
+         finish { ambient 0.1 diffuse 0.9 phong 1 }      
 }
+
 
 plane {
   y, 0
